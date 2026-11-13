@@ -6,7 +6,7 @@ on:
 
 jobs:
   hello:
-    runs-on: fedora-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Say Hello
         run: echo "Hello! My first CI/CD workflow is running!"
