@@ -1,1 +1,18 @@
+name: My First CI Workflow
 
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: fedora-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello! My first CI/CD workflow is running!"
+
+      - name: Show date
+        run: date
+
+      - name: Show Linux Version
+        run: uname -a
